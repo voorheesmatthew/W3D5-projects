@@ -4,6 +4,12 @@ body {
   background-color: #FEFFF1;
 }
 
+.stop-float::after {
+  content: "whfjkqhf";
+  display: block;
+  clear: right;
+}
+
 h1 {
   font-size: 38px;
   margin-bottom: 10px;
@@ -24,6 +30,7 @@ ul li a, figcaption a {
 of the header element */
 header > img {
   width: 100px;
+  float: left;
 }
 
 /* Selects all elements with the class attribute "ingredients-list" */
@@ -73,7 +80,8 @@ h2 + .user_review {
 }
 
 nav {
-    display: inline-block;
+    /* display: inline-block; */
+    float: right;
 }
 
 nav ul li {
