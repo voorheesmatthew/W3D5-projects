@@ -74,7 +74,8 @@ def directed_by_one_of(them)
     .select(:id, :title)
     .joins(:director)
     .where('name IN (?)', them)
-    # .where('actors.id = movies.director_id')
+    # .joins(:actors)
+    # .where('actors.id = movies.director_id AND name IN (?)', them)
     
 end
 
